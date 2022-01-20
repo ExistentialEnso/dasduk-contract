@@ -12,7 +12,7 @@ standardized way of defining how tokens interact with the blockchain. It is one 
 NFTs on Ethereum and EVM-compatible blockchains.
 
 The typical ``_safeMint()`` method exposed by the ERC-721 implementation that people are used to takes both an address for the 
-NFT and an ID for it. The ``ERC721A.sol`` implementation simplifies what is exposed to our top level contract by asking for a quantity instead, which enables more low-level batching.
+NFT and an ID for it. The ``ERC721A.sol`` implementation simplifies what is exposed to our top level contract by asking for a quantity instead, which enables low-level batching of the mint.
 
 This is based on the MIT-licensed work done by the fine sers here: https://www.azuki.com/erc721a
 
