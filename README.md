@@ -21,7 +21,9 @@ This is based on the MIT-licensed work done by the fine sers here: https://www.a
 More recent versions of Solidity support an ``unchecked`` keyword that lets you disable integer overflow checking. If there is no way 
 a variable used in this block could **ever** be subject to overflow, it is a secure way to save a little on gas.
 
-``require`` statements in these blocks still function as expected as long as there is no way an integer overflow exploit is possible.
+The ``require`` statements in these blocks still function as expected as long as there is no way an integer overflow exploit is possible. 
+Therefore, it can be a risk when using with token amounts, but for wholly internally controlled variables like the number of NFTs minted, 
+there is no reason to worry about integer overflow checking. 
 
 ## Deployed Contract
 
