@@ -24,8 +24,7 @@ a variable used in this block could **ever** be subject to overflow, it is a sec
 to very strong protections against integer overflows when running code for financial security.
 
 The ``require`` statements in these blocks still function as expected as long as there is no way an integer overflow exploit is possible. 
-Therefore, it can be a risk when using with token amounts, but for wholly internally controlled variables like the number of NFTs minted, 
-there is no reason to worry about integer overflow checking. 
+Therefore, it can be a risk when using with user-supplied token amounts, but for wholly internally controlled variables like the number of NFTs minted, there is no reason to worry about integer overflow checking. 
 
 ## Dastardly Ducks
 
