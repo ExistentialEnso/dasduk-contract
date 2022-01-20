@@ -31,6 +31,8 @@ Therefore, it can be a risk when using with user-supplied token amounts, but for
 * Website: https://www.dastardlyducks.com/
 * Twitter: https://www.twitter.com/dastardlyducks
 * EtherScan: https://etherscan.io/address/0x5472896e283ebcb13924c659c9db594aa9dc05a4
+* OpenSea: https://opensea.io/collection/dastardly-ducks
+* LooksRare: https://looksrare.org/collections/0x5472896E283eBCB13924C659C9dB594aA9Dc05A4
 
 ## Author
 
