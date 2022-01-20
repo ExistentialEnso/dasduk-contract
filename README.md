@@ -2,7 +2,7 @@
 
 This repository contains the non-OpenZeppelin Solidity code used for the minting of Dastardly Ducks NFTs.
 
-The entire 10k minted out in less than 6 hours on January 19th, 2021 through the Dastardly Ducks website.
+The entire 10,000 NFTs minted out in less than 6 hours on January 19th, 2021 through the Dastardly Ducks website.
 
 The contract was widely praised for being ⛽️ low gas, particularly on the batch mints!
 
