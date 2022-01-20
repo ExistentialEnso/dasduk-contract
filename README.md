@@ -16,6 +16,13 @@ NFT and an ID for it. The ``ERC721A.sol`` implementation simplifies what is expo
 
 This is based on the MIT-licensed work done by the fine sers here: https://www.azuki.com/erc721a
 
+## "Unchecked" Code Blocks
+
+More recent versions of Solidity support an ``unchecked`` keyword that lets you disable integer overflow checking. If there is no way 
+a variable used in this block could **ever** be subject to overflow, it is a secure way to save a little on gas.
+
+``require`` statements in these blocks still function as expected as long as there is no way an integer overflow exploit is possible.
+
 ## Deployed Contract
 
 * EtherScan: https://etherscan.io/address/0x5472896e283ebcb13924c659c9db594aa9dc05a4
