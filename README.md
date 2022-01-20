@@ -5,7 +5,7 @@ This repository contains the non-OpenZeppelin Solidity code used for the minting
 The entire 10k minted out in less than 6 hours, and the contract was praised for being ⛽️ low gas, particularly on the 
 batch mints.
 
-## Alternate ERC-721A
+## Alternate ERC-721
 
 The reality is the current ERC-721 implementation is poorly suited for batch mintings. The ERC-721 token standard is simply a 
 standardized way of defining how tokens interact with the blockchain. It is one of a handful of standards that can be used for 
