@@ -1,4 +1,4 @@
-# Dastardly Ducks (DASDUK) Smart Contract
+# Dastardly Ducks NFT Smart Contract
 
 This repository contains the non-OpenZeppelin Solidity code used for the minting of Dastardly Ducks NFTs.
 
@@ -26,8 +26,10 @@ The ``require`` statements in these blocks still function as expected as long as
 Therefore, it can be a risk when using with token amounts, but for wholly internally controlled variables like the number of NFTs minted, 
 there is no reason to worry about integer overflow checking. 
 
-## Deployed Contract
+## Dastardly Ducks
 
+* Website: https://www.dastardlyducks.com/
+* Twitter: https://www.twitter.com/dastardlyducks
 * EtherScan: https://etherscan.io/address/0x5472896e283ebcb13924c659c9db594aa9dc05a4
 
 ## Author
