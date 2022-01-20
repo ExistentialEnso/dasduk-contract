@@ -10,17 +10,18 @@ The contract was widely praised for being ⛽️ low gas, particularly on the ba
 
 The reality is the current ERC-721 implementation is poorly suited for batch mintings. The ERC-721 token standard is simply a 
 standardized way of defining how tokens interact with the blockchain. It is one of a handful of standards that can be used for 
-NFTs on Ethereum and EVM-compatible blockchains.
+NFTs (on Ethereum and EVM-compatible blockchains.)
 
 The typical ``_safeMint()`` method exposed by the ERC-721 implementation that people are used to takes both an address for the 
-NFT and an ID for it. The ``ERC721A.sol`` implementation simplifies what is exposed to our top level contract by asking for a quantity instead, which enables low-level batching of the mint.
+NFT and an ID for it. The ``ERC721A.sol`` implementation simplifies what is exposed to our top-level contract by asking for a quantity instead, which enables low-level batching of the mint.
 
 This is based on the MIT-licensed work done by the fine sers here: https://www.azuki.com/erc721a
 
 ## "Unchecked" Code Blocks
 
 More recent versions of Solidity support an ``unchecked`` keyword that lets you disable integer overflow checking. If there is no way 
-a variable used in this block could **ever** be subject to overflow, it is a secure way to save a little on gas.
+a variable used in this block could **ever** be subject to overflow, it is a secure way to save some on gas. The blockchain defaults 
+to very strong protections against integer overflows when running code for financial security.
 
 The ``require`` statements in these blocks still function as expected as long as there is no way an integer overflow exploit is possible. 
 Therefore, it can be a risk when using with token amounts, but for wholly internally controlled variables like the number of NFTs minted, 
